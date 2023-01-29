@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/target/scala-2.13/clossyne_2.13-0.1-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/resources/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/resources/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	handler/MessageHandler.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/handler/MessageHandler.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	searchtree/BinaryTreeNode.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/searchtree/BinaryTreeNode.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	searchtree/BinaryTree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/searchtree/BinaryTree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	server/ClossyneServer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/server/ClossyneServer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/Delete.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/Delete.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/Range.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/Range.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/OperationReply.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/OperationReply.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/Get.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/Get.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/Set.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/Set.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	operations/Operation.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/christoph/Documents/Studium/Universität Wien/Informatik/WiSe22/CC/assignments/A3/clossyne/src/main/scala/operations/Operation.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
