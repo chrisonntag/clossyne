@@ -1,4 +1,6 @@
-# clossyne-py
+<h1>
+<img align="left" height="90" style="margin: 0 21px 12px 0;" src="https://github.com/chrisonntag/clossyne/raw/main/clossyne/docs/clossyne_small.png"> Clossyne
+</h1>
 Clossyne is a distributed key-value store built using Akka and Scala and named after Mnemosyne, the Greek goddess 
 of memory, who represents the idea of memory and recall. 
 The Clossyne Python Client allows users to interact with the Clossyne server using a simple Python API.
