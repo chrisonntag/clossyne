@@ -1,5 +1,5 @@
 <h1>
-<img align="left" height="90" style="margin: 0 21px 12px 0;" src="https://github.com/chrisonntag/clossyne/raw/main/clossyne/docs/clossyne_small.png"> Clossyne
+<img align="left" height="90" style="margin: 0 21px 12px 0;" src="https://github.com/chrisonntag/clossyne/raw/main/clossyne/docs/clossyne_small.png"> WIP: Clossyne
 </h1>
 
 Clossyne – short for Cloud Storage System and named after Mnemosyne, the greek goddess 
