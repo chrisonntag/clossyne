@@ -35,10 +35,12 @@ class Clossyne:
         self.sock = None
 
     def handle_response(self, command, response):
-        if(command == "SET"):
+        if (command == "GET" or command == "RNG"):
+            # OperationResult event
+            return None if (response == "NS" or response == "NIL") else response
+        else:
+            # OperationFinished event
             return response == "OK"
-        elif (command == "GET"):
-            return response
 
     def send(self, command: str, *args):
         command = command.upper()
@@ -48,7 +50,7 @@ class Clossyne:
 
         try:
             # sendall guarantees that all the data is sent before returning
-            self.sock.sendall(str.encode(command + "\n"))
+            self.sock.sendall(str.encode(command))
             response = self.sock.recv(1024).decode()
 
             return self.handle_response(command[:3], response)

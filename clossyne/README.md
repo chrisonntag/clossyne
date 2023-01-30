@@ -39,7 +39,7 @@ java -jar target/scala-2.12/clossyne.jar
 Alternatively, you can also run the Docker image of Clossyne by using the following command:
 
 ```
-docker run -e CLOSSYNE_HOST=localhost -e CLOSSYNE_PORT=4297 -p 4297:4297 clossyne:latest
+docker run -e CLOSSYNE_HOST="0.0.0.0" -p 4297:4297 christophsonntag/clossyne:1.0
 ```
 
 This will start the Clossyne service on the specified host and port, and make it accessible via the specified port on the Docker host.

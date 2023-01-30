@@ -40,8 +40,9 @@ False
 ```
 
 ## Commands
-SET: Inserts a key-value pair into the Clossyne store. Returns True if the insert was successful, False otherwise.
-GET: Retrieves the value associated with a given key. Returns False if the key does not exist.
-DEL: Deletes a key-value pair from the Clossyne store. Returns True if the deletion was successful, False otherwise.
-RNG: Retrieves a range of key-value pairs from the Clossyne store.
-EXT: Closes the connection to the Clossyne server. Sent automatically when the with context ends.
+
+- SET: Inserts a key-value pair into the Clossyne store. Returns True if the insert was successful, False otherwise.
+- GET: Retrieves the value associated with a given key. Returns False if the key does not exist.
+- DEL: Deletes a key-value pair from the Clossyne store. Returns True if the deletion was successful, False otherwise.
+- RNG: Retrieves a range of key-value pairs from the Clossyne store.
+- EXT: Closes the connection to the Clossyne server. Sent automatically when the with context ends.

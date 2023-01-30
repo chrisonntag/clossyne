@@ -6,4 +6,4 @@ sealed trait OperationReply {
     def value: Option[String]
 }
 case class OperationFinished(succeeded: Boolean, value: Option[String]) extends OperationReply
-case class GetResult(succeeded: Boolean, value: Option[String]) extends OperationReply
+case class OperationResult(succeeded: Boolean, value: Option[String]) extends OperationReply

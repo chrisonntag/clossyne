@@ -5,7 +5,7 @@ import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 import akka.util.ByteString
 import akka.io.{IO, Tcp}
 import operations._
-import operations.{OperationReply, OperationFinished, GetResult}
+import operations.{OperationReply, OperationFinished, OperationResult}
 
 import searchtree.BinaryTree
 
@@ -48,7 +48,7 @@ class MessageHandler(val client: ActorRef, val binaryTree: ActorRef) extends Act
                 case OperationFinished(succeeded: Boolean, _: Option[String]) =>
                     val response: String = if(succeeded) "OK" else "NS"
                     this.client ! Write(ByteString.fromString(response))
-                case GetResult(succeeded: Boolean, value: Option[String]) =>
+                case OperationResult(succeeded: Boolean, value: Option[String]) =>
                     val response: String = if (succeeded) value.getOrElse("NIL") else "NS"
                     this.client ! Write(ByteString.fromString(response))
             }

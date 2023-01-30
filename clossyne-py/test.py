@@ -27,12 +27,53 @@ class TestClass:
         value = str({k:v for (k, v) in zip(self.reader.headers, row)})
         return key, value
 
-    def perform(self):
-        with clossyne.Clossyne('localhost', 4297) as c:
+    def perform_delete_leaf(self):
+        with clossyne.Clossyne('0.0.0.0', 4297) as c:
             key, value = self.get_next_pair()
             if (c.set(key, value)):
+                print("Value has been saved")
                 saved_value = c.get(key)
-                print(saved_value)
+                print("GET ", key, ": ", saved_value)
+                print("Delete ", key)
+                print(c.delete(key))
+                print("GET ", key, ": ", c.get(key))
+
+    def perform_delete_child(self):
+        with clossyne.Clossyne('localhost', 4297) as c:
+            print(c.set("a", "val"))
+            print(c.set("b", "value"))
+            print(c.delete("a")) 
+            print(c.get("a")) 
+            print(c.get("b")) 
+
+    def perform_delete_children(self):
+        with clossyne.Clossyne('localhost', 4297) as c:
+            print(c.set("d", "val"))
+            print(c.set("b", "value"))
+            print(c.set("a", "value"))
+            print(c.set("c", "value"))
+            print(c.set("f", "value"))
+            print(c.set("e", "value"))
+            print(c.set("g", "value"))
+            print(c.delete("d")) 
+            print(c.get("d")) 
+            print(c.get("b")) 
+
+        with clossyne.Clossyne('localhost', 4297) as c:
+            print(c.get("d")) 
+            print(c.get("b")) 
+
+    def perform_dataset(self, num):
+        with clossyne.Clossyne('0.0.0.0', 4297) as c:
+            for i in range(0, num):
+                key, value = self.get_next_pair()
+                c.set(key, value)
+            print("Delete Standing: ", c.delete("Standing"))
+            print("Delete Mike: ", c.delete("Mike"))
+            print("Get Ogren: ", c.get("Ogren"))
+            print("Get Bergman: ", c.get("Bergman"))
+            print("Get Nadia: ", c.get("Nadia"))
+
 
     def clean(self):
         self.reader.close()
@@ -40,6 +81,6 @@ class TestClass:
 
 if __name__ == '__main__':
     test_class = TestClass('test/data/names.csv')
-    test_class.perform()
+    test_class.perform_dataset(400)
     test_class.clean()
     
