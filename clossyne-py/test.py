@@ -1,6 +1,7 @@
 import os
 import clossyne
 import csv
+import random
 from time import sleep
 
 
@@ -68,11 +69,11 @@ class TestClass:
             for i in range(0, num):
                 key, value = self.get_next_pair()
                 c.set(key, value)
-            print("Delete Standing: ", c.delete("Standing"))
-            print("Delete Mike: ", c.delete("Mike"))
-            print("Get Ogren: ", c.get("Ogren"))
-            print("Get Bergman: ", c.get("Bergman"))
-            print("Get Nadia: ", c.get("Nadia"))
+            print("Delete first pair: ", c.delete(str(random.randint(0, 1000))))
+            print("Delete second: ", c.delete(str(random.randint(0, 1000))))
+            print("Get first: ", c.get(str(random.randint(0, 1000))))
+            print("Get second: ", c.get(str(random.randint(0, 1000))))
+            print("Get third: ", c.get(str(random.randint(0, 1000))))
 
 
     def clean(self):
@@ -80,7 +81,9 @@ class TestClass:
         
 
 if __name__ == '__main__':
-    test_class = TestClass('test/data/names.csv')
-    test_class.perform_dataset(400)
+    test_class = TestClass('test/data/fraudTrain.csv')
+    # print(len(list(test_class.reader.csvreader)))
+
+    print(test_class.perform_dataset(1296))
     test_class.clean()
     

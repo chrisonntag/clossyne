@@ -36,7 +36,13 @@ True
 'bar'
 >>> with clossyne.Clossyne('localhost', 4297) as c:
         c.get("foobar")
-False
+None
+>>> with clossyne.Clossyne('localhost', 4297) as c:
+        c.delete("foo")
+True
+>>> with clossyne.Clossyne('localhost', 4297) as c:
+        c.get("foo")
+None
 ```
 
 ## Commands
