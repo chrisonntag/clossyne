@@ -26,7 +26,7 @@ After that, navigate to ```clossyne-py/```, create a virtual environment and ins
 python3 -m venv env
 source env/bin/activate
 
-pip install setup.py
+pip install .
 ```
 
 Import clossyne and use the ```Clossyne``` class in a with-context:

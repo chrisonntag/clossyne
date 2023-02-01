@@ -9,7 +9,7 @@ The Clossyne Python Client allows users to interact with the Clossyne server usi
 The Clossyne Python Client can be installed using the included setup.py wheel. To install using pip, run the following command:
 
 ```
-pip install setup.py
+pip install .
 ```
 
 ## Usage
